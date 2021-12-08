@@ -7,7 +7,7 @@ import {IoLogoReact, SiRedux, SiTypescript} from "react-icons/all";
 
 export const MySkills = () => {
     return (
-        <div className={styles.skillsBlock}>
+        <div className={styles.skillsBlock} id={'skills'}>
             <div className={`${container.containerStyle} ${styles.skillsContainer}`}>
                 <Title title={'Skills'} style={{color:'white'}}/>
                 <div className={styles.skills}>

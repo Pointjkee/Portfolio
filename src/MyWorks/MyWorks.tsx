@@ -17,7 +17,7 @@ export const MyWorks = () => {
         backgroundImage: `url(${counterImage})`,
     };
     return (
-        <div className={styles.works}>
+        <div className={styles.works} id={'projects'}>
             <div className={`${container.containerStyle} ${styles.worksContainer}`}>
                 <Title title={'My works'}/>
                 <div className={styles.work}>

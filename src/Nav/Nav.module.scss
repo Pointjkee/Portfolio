@@ -12,5 +12,9 @@
         color: $textSecondColor;
         font-family: $fontFamilyGrotesk;
         padding: 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: rgba(132, 131, 132, 0.86);
+        }
     }
 }

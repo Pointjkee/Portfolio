@@ -10,7 +10,7 @@ export const Main = () => {
         backgroundImage: `url(${photo})`,
     };
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id={'main'}>
             <div className={container.containerStyle}>
                 <div className={styles.text}>
                     <span>Hello, ALL!</span>

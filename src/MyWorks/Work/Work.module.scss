@@ -24,20 +24,12 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-
-
-    &::before {
-      position: absolute;
-      content: '';
-      background-color: rgba(0, 0, 0, .7);
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.3;
-    }
+    filter: blur(1px);
+    transition: all 0.7s ease-in-out;
 
     .btn {
+      opacity: 0;
+      cursor: pointer;
       text-decoration: none;
       color: #000;
       border: 1px solid #ced4da;
@@ -45,6 +37,22 @@
       background-color: #ebebeea3;
       position: relative;
       z-index: 1;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    .img {
+      filter: blur(0px);
+
+      .btn {
+        opacity: 1;
+
+        &:hover {
+          border: 1px solid black;
+          z-index: 1;
+        }
+      }
     }
   }
 
@@ -57,20 +65,7 @@
     margin-bottom: 8px;
   }
 
-  &::before {
-    border: black 1px solid;
-    border-radius: 2px;
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-  @media screen and (max-width: 902px){
+  @media screen and (max-width: 902px) {
     margin-bottom: 20px;
   }
 }
-
-

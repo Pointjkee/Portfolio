@@ -5,7 +5,7 @@ import {Title} from "../common/components/title/Title";
 
 export const Feedback = () => {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id={'contacts'}>
             <div className={`${container.containerStyle} ${styles.feedbackContainer}`}>
                 <Title title={'Contacts'}/>
                 <form className={styles.form}>
