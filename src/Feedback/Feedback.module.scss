@@ -1,0 +1,43 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: $backgroundFirstColor;
+
+  .feedbackContainer {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+
+    button {
+      margin-top: 10px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
+    }
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    color: #000;
+    border: 1px solid #ced4da;
+    background-color: #ebebeea3;
+    font-family: $fontFamilySegoe;
+  }
+}
+
+
+
+
+
+
+

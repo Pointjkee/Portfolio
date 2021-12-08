@@ -1,0 +1,76 @@
+@import "src/common/styles/sass/mixins";
+@import "src/common/styles/sass/variables";
+
+.work {
+  width: 320px;
+  background-color: #eff0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  position: relative;
+
+
+  .img {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: rgba(0, 0, 0, .7);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #ced4da;
+      padding: 12px;
+      background-color: #ebebeea3;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .workTitle {
+    @include text(700, 17.8px, $fontFamilyGrotesk, #232226);
+    text-align: inherit;
+    font-style: normal;
+    margin-top: 0;
+    letter-spacing: 0.09em;
+    margin-bottom: 8px;
+  }
+
+  &::before {
+    border: black 1px solid;
+    border-radius: 2px;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  @media screen and (max-width: 902px){
+    margin-bottom: 20px;
+  }
+}
+
+

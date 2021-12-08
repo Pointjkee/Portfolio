@@ -1,0 +1,16 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+
+.nav {
+    border: 1px solid;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        color: $textSecondColor;
+        font-family: $fontFamilyGrotesk;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,15 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.title {
+  height: 60px;
+  text-align: center;
+
+  h2 {
+    @include text(500, calc(40px + 14 * ((100vw - 1600px) / 1024)), $fontFamilyGrotesk, $textFirstColor);
+    line-height: 1.05;
+    letter-spacing: -.02em;
+    margin: 0;
+  }
+}
+

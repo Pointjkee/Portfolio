@@ -1,0 +1,7 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.App {
+  @include text(400, calc(16.6px + 1.2 * ((100vw - 1500px) / 1024)), $fontFamilySegoe, $textFirstColor);
+  line-height: 1.4;
+}
