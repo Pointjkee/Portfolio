@@ -24,10 +24,12 @@ export const MyWorks = () => {
                     <Work nameProject={'Todolist'}
                           style={todo}
                           description={'TS, Redux, RestAPI, Thunk, Axios, Material UI, Unit Tests'}
+                          site={'www'}
                     />
                     <Work style={counter}
                           nameProject={'Counter'}
                           description={'TS, Redux, Reducers'}
+                          site={'https://pointjkee.github.io/Counter/'}
                     />
                 </div>
             </div>

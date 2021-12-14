@@ -32,9 +32,46 @@
     .form {
       display: flex;
       flex-direction: column;
-      width: 40%;
+      width: 50%;
       @media screen and (max-width: 1000px) {
         width: 100%;
+      }
+
+      .inputs {
+        margin-top: 10px;
+        height: 20px;
+        border: 0;
+        box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: width, right 0.4s ease-in-out;
+        width: 40%;
+        position: relative;
+        right: -150px;
+        padding: 5px;
+        font-family: inherit;
+        font-size: inherit;
+
+
+        &:focus {
+          background-color: rgba(172, 172, 172, 0.38);
+          width: 100%;
+          right: 0;
+        }
+      }
+
+      .textarea {
+        padding: 5px;
+        margin-top: 10px;
+        height: 40px;
+        font-family: inherit;
+        font-size: inherit;
+        border: 0;
+        box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+
+        &:focus {
+          background-color: rgba(172, 172, 172, 0.38);
+        }
       }
     }
   }

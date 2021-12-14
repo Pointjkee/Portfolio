@@ -9,9 +9,11 @@ export const Feedback = () => {
             <div className={`${container.containerStyle} ${styles.feedbackContainer}`}>
                 <Title title={'Contacts'}/>
                 <form className={styles.form}>
-                    <input placeholder={"Your Name"}/>
-                    <input placeholder={"Your Email"}/>
-                    <textarea placeholder={"Your Message"}/>
+                    <div className="text-field__icon text-field__icon_email">
+                    <input placeholder={"Your Name"} className={styles.inputs}/>
+                    </div>
+                    <input placeholder={"Your Email"} className={styles.inputs}/>
+                    <textarea placeholder={"Your Message"} className={styles.textarea}/>
                 </form>
                 <button>Send</button>
             </div>
