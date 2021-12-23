@@ -7,6 +7,7 @@ import {Title} from "../common/components/title/Title";
 import todoImage from "../assets/image/todo2.JPG"
 //@ts-ignore
 import counterImage from "../assets/image/counter.JPG"
+import {Fade} from "react-awesome-reveal";
 
 
 export const MyWorks = () => {
@@ -18,21 +19,23 @@ export const MyWorks = () => {
     };
     return (
         <div className={styles.works} id={'projects'}>
-            <div className={`${container.containerStyle} ${styles.worksContainer}`}>
-                <Title title={'My works'}/>
-                <div className={styles.work}>
-                    <Work nameProject={'Todolist'}
-                          style={todo}
-                          description={'TS, Redux, RestAPI, Thunk, Axios, Material UI, Unit Tests'}
-                          site={'www'}
-                    />
-                    <Work style={counter}
-                          nameProject={'Counter'}
-                          description={'TS, Redux, Reducers'}
-                          site={'https://pointjkee.github.io/Counter/'}
-                    />
+            <Fade>
+                <div className={`${container.containerStyle} ${styles.worksContainer}`}>
+                    <Title title={'My works'}/>
+                    <div className={styles.work}>
+                        <Work nameProject={'Todolist'}
+                              style={todo}
+                              description={'TS, Redux, RestAPI, Thunk, Axios, Material UI, Unit Tests'}
+                              site={'https://pointjkee.github.io/todolist/'}
+                        />
+                        <Work style={counter}
+                              nameProject={'Counter'}
+                              description={'TS, Redux, Reducers'}
+                              site={'https://pointjkee.github.io/Counter/'}
+                        />
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     )
 }
