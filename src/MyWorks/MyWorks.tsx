@@ -7,6 +7,8 @@ import {Title} from "../common/components/title/Title";
 import todoImage from "../assets/image/todo2.JPG"
 //@ts-ignore
 import counterImage from "../assets/image/counter.JPG"
+//@ts-ignore
+import socialImage from "../assets/image/social.JPG"
 import {Fade} from "react-awesome-reveal";
 
 
@@ -17,6 +19,10 @@ export const MyWorks = () => {
     const counter = {
         backgroundImage: `url(${counterImage})`,
     };
+    const social = {
+        backgroundImage: `url(${socialImage})`,
+    };
+
     return (
         <div className={styles.works} id={'projects'}>
             <Fade>
@@ -32,6 +38,11 @@ export const MyWorks = () => {
                               nameProject={'Counter'}
                               description={'TS, Redux, Reducers'}
                               site={'https://pointjkee.github.io/Counter/'}
+                        />
+                        <Work style={social}
+                              nameProject={'Social network'}
+                              description={'TS, Redux, RestAPI, Thunk, Axios, formik'}
+                              site={'https://pointjkee.github.io/Social_network/'}
                         />
                     </div>
                 </div>
