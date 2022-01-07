@@ -9,6 +9,8 @@ import todoImage from "../assets/image/todo2.JPG"
 import counterImage from "../assets/image/counter.JPG"
 //@ts-ignore
 import socialImage from "../assets/image/social.JPG"
+//@ts-ignore
+import packImage from "../assets/image/packs.JPG"
 import {Fade} from "react-awesome-reveal";
 
 
@@ -22,6 +24,10 @@ export const MyWorks = () => {
     const social = {
         backgroundImage: `url(${socialImage})`,
     };
+    const packs = {
+        backgroundImage: `url(${packImage})`,
+    };
+
 
     return (
         <div className={styles.works} id={'projects'}>
@@ -43,6 +49,11 @@ export const MyWorks = () => {
                               nameProject={'Social network'}
                               description={'TS, Redux, RestAPI, Thunk, Axios, formik'}
                               site={'https://pointjkee.github.io/Social_network/'}
+                        />
+                        <Work style={packs}
+                              nameProject={'Packs game'}
+                              description={'TS, Redux-toolkit, RestAPI, Thunk, Axios, formik, MUI'}
+                              site={'https://pointjkee.github.io/Final-Project-Friday/'}
                         />
                     </div>
                 </div>
