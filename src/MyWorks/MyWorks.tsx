@@ -11,22 +11,27 @@ import counterImage from "../assets/image/counter.JPG"
 import socialImage from "../assets/image/social.JPG"
 //@ts-ignore
 import packImage from "../assets/image/packs.JPG"
+//@ts-ignore
+import selectImage from "../assets/image/select.JPG"
 import {Fade} from "react-awesome-reveal";
 
 
 export const MyWorks = () => {
     const todo = {
         backgroundImage: `url(${todoImage})`,
-    };
+    }
     const counter = {
         backgroundImage: `url(${counterImage})`,
-    };
+    }
     const social = {
         backgroundImage: `url(${socialImage})`,
-    };
+    }
     const packs = {
         backgroundImage: `url(${packImage})`,
-    };
+    }
+    const select = {
+        backgroundImage: `url(${selectImage})`,
+    }
 
 
     return (
@@ -54,6 +59,11 @@ export const MyWorks = () => {
                               nameProject={'Packs game'}
                               description={'TS, Redux-toolkit, RestAPI, Thunk, Axios, formik, MUI'}
                               site={'https://pointjkee.github.io/Final-Project-Friday/'}
+                        />
+                        <Work style={select}
+                              nameProject={'Extended select'}
+                              description={'VanillaJS'}
+                              site={'https://pointjkee.github.io/Extended-Select/'}
                         />
                     </div>
                 </div>
